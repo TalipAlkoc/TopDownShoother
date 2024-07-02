@@ -1,2 +1,0 @@
-# TopDownShoother
-Vertigo Games Kurs
