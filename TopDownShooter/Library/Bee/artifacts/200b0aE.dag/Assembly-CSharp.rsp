@@ -361,8 +361,10 @@
 "Assets/Scripts/Camera/CameraSettings.cs"
 "Assets/Scripts/Inputs/InputData.cs"
 "Assets/Scripts/Inputs/InputManager.cs"
-"Assets/Scripts/Movement/PlayerMovementController.cs"
-"Assets/Scripts/Movement/PlayerMovementSettings.cs"
+"Assets/Scripts/PlayerControls/Movement/PlayerMovementController.cs"
+"Assets/Scripts/PlayerControls/Movement/PlayerMovementSettings.cs"
+"Assets/Scripts/PlayerControls/TowerRotation/TowerRotationController.cs"
+"Assets/Scripts/PlayerControls/TowerRotation/TowerRotationSettings.cs"
 -langversion:9.0
 /deterministic
 /optimize+

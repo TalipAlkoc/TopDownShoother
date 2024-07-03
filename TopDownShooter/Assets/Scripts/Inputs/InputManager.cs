@@ -8,13 +8,20 @@ namespace TopDownShoother.PlayerInput
 
     public class InputManager : MonoBehaviour
     {
-        [SerializeField] InputData _inputData;
+        [SerializeField] private InputData[] _ınputDataArray;
+
 
         private void Update()
         {
-           _inputData.Horizontal = Input.GetAxis("Horizontal");
-            _inputData.Vertical = Input.GetAxis("Vertical");
+            for(int i =0;  i < _ınputDataArray.Length; i++)
+            {
+                _ınputDataArray[i].ProcessInput();
+
+            }
         }
-    }
+
+
+
+    }//class
 
 }
