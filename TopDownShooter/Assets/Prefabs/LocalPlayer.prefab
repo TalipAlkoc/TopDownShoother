@@ -76,7 +76,6 @@ GameObject:
   - component: {fileID: 4209114040008072099}
   - component: {fileID: 2164212760349151990}
   - component: {fileID: 743178998148765942}
-  - component: {fileID: 3490145841135538279}
   m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -158,21 +157,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7505946288830619497}
   m_Enabled: 1
---- !u!114 &3490145841135538279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7505946288830619497}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a224ac8de50b643e98cf909928f7c949, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cameraSettings: {fileID: 11400000, guid: 929ceb96ae2f4409f8bbe63b5863aef8, type: 2}
-  _targetTransform: {fileID: 1304784537903912415}
-  _cameraTransform: {fileID: 4209114040008072099}
 --- !u!1001 &2720213504207841449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -346,6 +330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _inputData: {fileID: 11400000, guid: 8c04a29e3d9184c83bbba01576b1789e, type: 2}
   _rigidbody: {fileID: 3598055518816184388}
+  _targetTransform: {fileID: 5322780830234110473}
   _playerMovementSettings: {fileID: 11400000, guid: 4303eb8a7c5334387844f1d8a35942a6, type: 2}
 --- !u!4 &1304784537903912415 stripped
 Transform:
