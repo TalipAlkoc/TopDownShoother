@@ -9,20 +9,46 @@ namespace TopDownShoother.Inventory
     {
         [SerializeField] private AbstractBasePlayerInventoryItemData[] _inventoryItemDataArray;
         public Transform parent;
+        private List<AbstractBasePlayerInventoryItemData> _instantiatedItemDataList;
         private void Start()
         {
 
             InitilizeInventory(_inventoryItemDataArray);
         }
 
+        private void OnDestroy()
+        {
+            ClearInventory();
+        }
+
+
         public void InitilizeInventory(AbstractBasePlayerInventoryItemData[] _inventoryItemDataArray)
         {
+
+            ClearInventory();
+
+            _instantiatedItemDataList = new List<AbstractBasePlayerInventoryItemData>(_inventoryItemDataArray.Length);
             for (int i = 0; i < _inventoryItemDataArray.Length; i++)
             {
-                _inventoryItemDataArray[i].CreateIntoInventory(this);
+                var instantiated = Instantiate(_inventoryItemDataArray[i]);
+                instantiated.CreateIntoInventory(this);
+                _instantiatedItemDataList.Add(instantiated);
             }
         }
 
-    }
+        private void ClearInventory()
+        {
+            if (_instantiatedItemDataList != null)
+            {
+                for (int i = 0; i < _instantiatedItemDataList.Count; i++)
+                {
+                    _instantiatedItemDataList[i].Destroy();
+
+                }
+            }
+        }
+
+    }//class
+
 }
 

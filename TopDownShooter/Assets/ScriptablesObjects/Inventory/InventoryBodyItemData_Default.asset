@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a3463979c9ce4c20a73e57535d9d492, type: 3}
   m_Name: InventoryBodyItemData_Default
   m_EditorClassIdentifier: 
-  _itemId: 
+  _itemId: default
+  "_\u0131nventoryDataItemType": 1
+  _prefab: {fileID: 8176070294864422720, guid: 53225c4cc832d408fb1601fbcd3b9926, type: 3}
