@@ -10,9 +10,17 @@ namespace TopDownShoother.Inventory
     {
         public override void CreateIntoInventory(PlayerInventoryController _targetPlayerInventory)
         {
-            var instantiated = InstantiateAndInitilizePrefab(_targetPlayerInventory.parent);
+            InstantiateAndInitilizePrefab(_targetPlayerInventory.parent);
             Debug.Log("Thıs class ıs player inventory canon ıtem data");
         }
+
+
+        public void Shoot()
+        {
+            _instantiated.Shoot();
+        }
+
+
     }//class
 
 }

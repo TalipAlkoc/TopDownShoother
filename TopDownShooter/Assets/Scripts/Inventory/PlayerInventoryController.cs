@@ -10,6 +10,12 @@ namespace TopDownShoother.Inventory
         [SerializeField] private AbstractBasePlayerInventoryItemData[] _inventoryItemDataArray;
         public Transform parent;
         private List<AbstractBasePlayerInventoryItemData> _instantiatedItemDataList;
+
+
+        private PlayeInventoryCanonItemData _playeInventoryCanonItemData;
+
+
+
         private void Start()
         {
 
@@ -47,6 +53,14 @@ namespace TopDownShoother.Inventory
                 }
             }
         }
+
+
+        private void Update()
+        {
+            
+        }
+
+
 
     }//class
 

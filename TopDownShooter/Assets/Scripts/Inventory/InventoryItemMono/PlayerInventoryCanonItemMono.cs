@@ -8,16 +8,14 @@ namespace TopDownShoother.Inventory
 
     public class PlayerInventoryCanonItemMono : AbstractPlayerInventoryMono
     {
-        // Start is called before the first frame update
-        void Start()
+        [SerializeField] private Transform _canonShootPoint;
+
+
+
+
+       public void Shoot()
         {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
+            ScriptabeleShootManager.Instance.Shoot(_canonShootPoint.position, _canonShootPoint.forward);
         }
     }
 
