@@ -13,8 +13,8 @@ namespace TopDownShoother.Inventory
         public Transform parent;
         private List<AbstractBasePlayerInventoryItemData> _instantiatedItemDataList;
 
-        
 
+        public ReactiveCommand ReactiveShootCommand { get; private set; }
 
         private void Start()
         {
@@ -30,15 +30,28 @@ namespace TopDownShoother.Inventory
 
         public void InitilizeInventory(AbstractBasePlayerInventoryItemData[] _inventoryItemDataArray)
         {
-
+            if (ReactiveShootCommand == null)
+            {
+                ReactiveShootCommand = new ReactiveCommand();
+            }
+            else
+            {
+                //adjusting reactive command 
+                ReactiveShootCommand.Dispose();
+                ReactiveShootCommand = new ReactiveCommand();
+            }
+            
+            //clearing old inventory and creating new one 
             ClearInventory();
-
             _instantiatedItemDataList = new List<AbstractBasePlayerInventoryItemData>(_inventoryItemDataArray.Length);
+
+            
+
+            
             for (int i = 0; i < _inventoryItemDataArray.Length; i++)
             {
                 var instantiated = Instantiate(_inventoryItemDataArray[i]);
-                instantiated.CreateIntoInventory(this);
-                instantiated.Initialize();
+                instantiated.Initialize(this);
                 _instantiatedItemDataList.Add(instantiated);
             }
         }
@@ -56,10 +69,7 @@ namespace TopDownShoother.Inventory
         }
 
 
-        private void Update()
-        {
-            
-        }
+       
 
 
 

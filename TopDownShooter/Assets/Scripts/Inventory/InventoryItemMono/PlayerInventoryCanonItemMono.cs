@@ -15,7 +15,9 @@ namespace TopDownShoother.Inventory
 
        public void Shoot()
         {
+            //add also effects and such
             ScriptabeleShootManager.Instance.Shoot(_canonShootPoint.position, _canonShootPoint.forward);
+            
         }
     }
 
