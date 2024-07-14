@@ -10,6 +10,13 @@ namespace TopDownShoother.Inventory
     {
         public abstract void CreateIntoInventory(PlayerInventoryController _targetPlayerInventory);
 
+        public virtual void Initialize()
+        {
+
+        }
+
+
+
         public virtual void Destroy()
         {
             Destroy(this);

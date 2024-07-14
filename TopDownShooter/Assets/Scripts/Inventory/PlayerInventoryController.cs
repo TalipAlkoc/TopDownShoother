@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UniRx;
+
 
 namespace TopDownShoother.Inventory
 {
@@ -11,9 +13,7 @@ namespace TopDownShoother.Inventory
         public Transform parent;
         private List<AbstractBasePlayerInventoryItemData> _instantiatedItemDataList;
 
-
-        private PlayeInventoryCanonItemData _playeInventoryCanonItemData;
-
+        
 
 
         private void Start()
@@ -38,6 +38,7 @@ namespace TopDownShoother.Inventory
             {
                 var instantiated = Instantiate(_inventoryItemDataArray[i]);
                 instantiated.CreateIntoInventory(this);
+                instantiated.Initialize();
                 _instantiatedItemDataList.Add(instantiated);
             }
         }
