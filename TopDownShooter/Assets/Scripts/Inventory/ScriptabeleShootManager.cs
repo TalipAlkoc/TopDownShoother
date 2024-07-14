@@ -13,11 +13,13 @@ namespace TopDownShoother.Inventory
 
         public override void Initilize()
         {
+            base.Initilize();
             Debug.Log("scriptable shoot manager activated");
         }
 
         public override void Destroy()
         {
+            base.Destroy();
             Debug.Log("scriptable shoot manager destroyed");
         }
 

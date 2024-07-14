@@ -343,6 +343,7 @@ GameObject:
   - component: {fileID: 7771489785691705891}
   - component: {fileID: 4419942870072073938}
   - component: {fileID: 1779228794365709833}
+  - component: {fileID: 8176070294864422720}
   m_Layer: 0
   m_Name: TankFree_Body
   m_TagString: Untagged
@@ -419,3 +420,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8176070294864422720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8254335765183751570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6082478f6d52438886a50ba8d18cfe5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

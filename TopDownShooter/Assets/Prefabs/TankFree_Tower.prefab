@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4115025297639146391}
   - component: {fileID: 1561910023653854222}
   - component: {fileID: 7128198608538051772}
+  - component: {fileID: 4512699973619647189}
   m_Layer: 0
   m_Name: TankFree_Tower
   m_TagString: Untagged
@@ -84,6 +85,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4512699973619647189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550630781108779839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0660abc46abb74a7c8308d69025600ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _canonShootPoint: {fileID: 0}
 --- !u!1 &1006382792441814784
 GameObject:
   m_ObjectHideFlags: 0
