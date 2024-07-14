@@ -332,7 +332,6 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/CFXRRuntime.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/KinoBloom.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/ToonyColorsPro.Demo.Editor.ref.dll"
--r:"Library/Bee/artifacts/200b0aE.dag/UniRx.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Addressables.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Addressables.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
